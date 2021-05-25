@@ -7,18 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/favicon_48.ico" />
     <title>Misong's Portfolio</title>
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body>
     <!-- banner -->
-    <div class="banner">
+    <header class="banner">
         <div id="text">
-            <h2><span>DIVE</span> INTO CODE</h2>
-            <h3>HELLO, I'M <span class="name">MISONG GO</span></h3>
+            <h1><span>DIVE</span> INTO CODE</h1>
+            <p class="introduce">HELLO, I'M <span class="name">MISONG GO</span></p>
         </div>
         <div class="clouds hidden">
             <img src="images/cloud1.png" style="--i:1;"></img>
@@ -32,26 +31,34 @@
             <img src="images/cloud4.png" style="--i:7;"></img>
             <img src="images/cloud5.png" style="--i:6;"></img>
         </div>
-    </div>
+    </header>
+    <nav>
+        <ul>
+            <li>ABOUT</li>
+            <li>SKILLS</li>
+            <li>PROJECT</li>
+            <li>JOURNEY</li>
+            <li>CONTACT</li>
+        </ul>
+    </nav>
     <!-- about -->
     <section class="about">
-        <div data-aos="fade-down" data-aos-easing="ease-out-quart">
-            <h2 class="title">ABOUT</h2>
-            <div class="subTitle">
-                <h3># 배움과 도전을 즐기는 프론트엔드 개발자</h3>
-            </div>
+        <article class="anchor" data-aos="fade-down" data-aos-easing="ease-out-quart" data-aos-anchor-placement="bottom-bottom">
+            <h2>ABOUT</h2>
+            <h3># 배움과 도전을 즐기는 프론트엔드 개발자</h3>
             <p>새로운 도전에 대한 설렘은 4,600미터에서의 다이빙도 가능케 합니다.</p>
             <p> 개발의 가장 큰 매력은 성장과 기여가 유기적으로 연결되어 있다는 것입니다.
                 주도적인 커리어 관리와 성장에 대한 갈망으로 개발자의 길을 걷게 되었습니다.
-                책임감있게 일 하고 끊임없이 개선하여
+                책임감있게 일 하고 끊임없이 스스로를 개선하여
                 팀과 회사의 성장, 사용자 편의에 기여할 수 있는 개발자가 되고 싶습니다.
                 그러기 위하여 최선의 방식을 고민하며 주도적으로 개발할 것입니다. 또한
                 사용자에게 특별한 경험을 제공하기 위해 다양한 시도와 배움을 지속하겠습니다.
                 제가 추구하는 웹 개발은 아래와 같습니다.
             </p>
-            <br />
-        </div>
-        <div class="wrap" data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-anchor=".about">
+        
+        </article>
+        <article class="wrap" data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-anchor=".anchor"
+            data-aos-anchor-placement="bottom-bottom">
             <div><img src="images/dynamic.png" alt="" class="aboutImg">
                 <h4>다이나믹 요소</h4>
                 <p>사용자와 상호작용하는 <br />동적인 웹사이트를 추구합니다.</p>
@@ -72,16 +79,14 @@
                 <h4>재사용성</h4>
                 <p>중복을 줄여 유지 보수하기 <br /> 좋은 코드를 생각합니다.</p>
             </div>
-        </div>
+        </article>
 
     </section>
     <!-- skills -->
-    <section class="skills">
+    <section class="skills" data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-anchor-placement="center-bottom">
         <h2 class="title">SKILLS</h2>
-        <div class="container">
-            <div class="container2">
-
-                <h3>저는 지금 이것을 할 수 있습니다.</h3>
+        <article class="container">
+            <div class="excludeChart">
                 <div id="skillsDesc">
                     <p>UI를 구현하고 RESTful API를 이용하여 서버와 협업할 수 있습니다.
                         <br />React의 필요성을 알고 라이프사이클과 가상 돔 이해를 바탕으로 코드를 작성할 수 있습니다.
@@ -89,69 +94,43 @@
                         <br />CSS의 cascading 원리를 이해하고 JS와 접목해 다양한 효과를 시도합니다.
                         <br />
                     </p>
-                    <div class="descWrap">
-                        <h4>JavaScript</h4>
-                    </div>
                 </div>
                 <div id="skillsWrap">
-                    <div class="skill">JS
-
-                    </div>
+                    <div class="skill">JS</div>
                     <div class="skill">React</div>
                     <div class="skill">Redux</div>
                     <div class="skill">HTML</div>
                     <div class="skill">CSS</div>
-                    <div class="skill smallFont">Styled Components</div>
+                    <div class="skill" style="font-size: 0.8em;">Styled Components</div>
                     <div class="skill">SCSS</div>
                     <div class="skill">Python</div>
                     <div class="skill">AWS</div>
-                    <div class="skill">firebase</div>
+                    <div class="skill">Firebase</div>
                     <div class="skill">Git</div>
                 </div>
             </div>
-            <div id="skillChart">
+            <div id="skillChart" data-aos="fade-left" data-aos-easing="ease-out-quart" data-aos-anchor=".skills" data-aos-anchor-placement="center-bottom">
                 <canvas id="myChart"></canvas>
             </div>
-        </div>
+        </article>
+        <aside class="detailDesc flexStart">
+            <h4 style="margin: 0;">JavaScript</h4>
+            <div>
+                <p></p>
+            </div>
+        </aside>
     </section>
 
     <section>
         <h2 class="title project">PROJECT</h2>
-        <h3>새로운 배움과 도전을 즐기는 프론트엔드 개발자</h3>
-        <p>새로운 도전에 대한 설렘은 4,600미터에서의 다이빙도 가능케 합니다.</p>
-        <p>금융 공기업에 재직하는 동안 성장과 주도적인 커리어 관리에 한계를 느꼈습니다.
-            스트레스 해소용으로 배우기 시작한 웹 개발에서 성취감과 흥미를 발견했습니다.
-            개발의 가장 큰 매력은 성장과 기여가 유기적으로 연결되어 있다는 것입니다.
-            평생 성장하는 사람이고자 하는 삶의 가치관과도 부합하여 개발자의 길을 걷게 되었습니다.
-            저는 팀과 회사 전체, 다수의 사용자에게 기여할 수 있는 개발자이고 싶습니다.
-            그러기 위하여
-            사용자에게 특별한 경험을 제공하기 위해 다양한 시도와 배움을 지속하겠습니다. </p>
-        <br />
-        <h3>개발 과정에서 중요하게 생각하는 5가지</h3>
-        <div class="wrap">
-            <div><img src="images/dynamic.png" alt="" class="aboutImg">
-                <h4>다이나믹 요소</h4>
-                <p>사용자와 상호작용하는 <br />동적인 웹사이트를 추구합니다.</p>
-            </div>
-            <div><img src="images/intuitive.png" alt="" class="aboutImg">
-                <h4>직관적인 UX/UI</h4>
-                <p>사용하기 편하고 직관적인 <br /> UX를 중시합니다.</p>
-            </div>
-            <div><img src="images/fix.png" alt="" class="aboutImg">
-                <h4>성능 최적화</h4>
-                <p>사용성 향상을 위해 <br /> 효율화와 최적화를 고려합니다.</p>
-            </div>
-            <div><img src="images/various.png" alt="" class="aboutImg">
-                <h4>다양한 환경</h4>
-                <p>다양한 실행 환경과 <br /> 사용자를 고려합니다.</p>
-            </div>
-            <div><img src="images/puzzle.png" alt="" class="aboutImg">
-                <h4>재사용성</h4>
-                <p>중복코드를 줄여 유지 보수하기 <br /> 좋은 코드를 생각합니다.</p>
-            </div>
-        </div>
+
     </section>
-    <div class="footer">
+    <section>
+        <h2 class="title contact">CONTACT</h2>
+        <div class="profile"></div>
+    </section>
+    <footer class="footer">
+        <img id="upArrow" src="images/up-arrow.png" alt="위로 올라가기 버튼">
         <!--Waves Container-->
         <div>
             <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -168,15 +147,14 @@
                 </g>
             </svg>
         </div>
-    </div>
         <!--Content starts-->
-<div class="content flex">
-    <div>
-    <p>Contact</p>
-    <p>ⓒ 2021. GOMI all rights reserved</p>
-    </div>
-    </div>
-    <!--Content ends-->
+        <div class="content flex">
+            <p>Contact</p>
+            <p>ⓒ 2021. GOMI all rights reserved</p>
+        </div>
+        <!--Content ends-->
+    </footer>
+
     <script type="text/javascript" src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
