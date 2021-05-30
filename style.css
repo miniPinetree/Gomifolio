@@ -18,6 +18,7 @@
 body {
   min-width: 1062px;
 }
+
 p {
   line-height: 1.6em;
 }
@@ -498,7 +499,7 @@ textarea {
   background-color: white;
 }
 .profile {
-  background: url(images/Img.png);
+  background: url(images/hoverImg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
@@ -506,14 +507,14 @@ textarea {
   height: 160px;
   margin-bottom: 20px;
 }
-.profile:hover {
+/* .profile {
   background: url(images/hoverImg.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   width: 180px;
   height: 160px;
-}
+} */
 div .icon {
   width: 35px;
   height: 35px;
