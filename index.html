@@ -10,6 +10,12 @@
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_nSqFMYOAS0yt29P8844Pb");
+        })();
+    </script>
 </head>
 
 <body>
@@ -33,29 +39,30 @@
         </div>
     </header>
     <nav>
-        <ul>
-            <li>ABOUT</li>
-            <li>SKILLS</li>
-            <li>PROJECT</li>
-            <li>JOURNEY</li>
-            <li>CONTACT</li>
+        <ul class="category">
+            <li><a href="#ABOUT">ABOUT</a></li>
+            <li><a href="#SKILLS">SKILLS</a></li>
+            <li><a href="#PROJECT">PROJECT</a></li>
+            <!-- <li><a href="#EXPERIENCE">EXPERIENCE</a></li> -->
+            <li><a href="#CONTACT">CONTACT</a></li>
         </ul>
     </nav>
     <!-- about -->
-    <section class="about">
-        <article class="anchor" data-aos="fade-down" data-aos-easing="ease-out-quart" data-aos-anchor-placement="bottom-bottom">
+    <section class="about" id="ABOUT">
+        <article class="anchor" data-aos="fade-down" data-aos-easing="ease-out-quart"
+            data-aos-anchor-placement="bottom-bottom">
             <h2>ABOUT</h2>
             <h3># 배움과 도전을 즐기는 프론트엔드 개발자</h3>
             <p>새로운 도전에 대한 설렘은 4,600미터에서의 다이빙도 가능케 합니다.</p>
-            <p> 개발의 가장 큰 매력은 성장과 기여가 유기적으로 연결되어 있다는 것입니다.
-                주도적인 커리어 관리와 성장에 대한 갈망으로 개발자의 길을 걷게 되었습니다.
-                책임감있게 일 하고 끊임없이 스스로를 개선하여
+            <p> 
+                프로그래밍의 파장력과 성장에 대한 갈망으로 개발자의 길을 걷게 되었습니다.
+                <br />책임감있게 일 하고 끊임없이 스스로를 개선하여
                 팀과 회사의 성장, 사용자 편의에 기여할 수 있는 개발자가 되고 싶습니다.
-                그러기 위하여 최선의 방식을 고민하며 주도적으로 개발할 것입니다. 또한
+                <br />그러기 위하여 최선의 방식을 고민하며 주도적으로 개발할 것이며
                 사용자에게 특별한 경험을 제공하기 위해 다양한 시도와 배움을 지속하겠습니다.
                 제가 추구하는 웹 개발은 아래와 같습니다.
             </p>
-        
+
         </article>
         <article class="wrap" data-aos="fade-up" data-aos-easing="ease-out-quart" data-aos-anchor=".anchor"
             data-aos-anchor-placement="bottom-bottom">
@@ -83,8 +90,9 @@
 
     </section>
     <!-- skills -->
-    <section class="skills" data-aos="fade-right" data-aos-easing="ease-out-quart" data-aos-anchor-placement="center-bottom">
-        <h2 class="title">SKILLS</h2>
+    <section id="SKILLS" class="skills" data-aos="fade-right" data-aos-easing="ease-out-quart"
+        data-aos-anchor-placement="center-bottom">
+        <h2 class="title">SKILLS<span>상대 수치와 기술별 사용 경험</span></h2>
         <article class="container">
             <div class="excludeChart">
                 <div id="skillsDesc">
@@ -109,7 +117,8 @@
                     <div class="skill">Git</div>
                 </div>
             </div>
-            <div id="skillChart" data-aos="fade-left" data-aos-easing="ease-out-quart" data-aos-anchor=".skills" data-aos-anchor-placement="center-bottom">
+            <div id="skillChart" data-aos="fade-left" data-aos-easing="ease-out-quart" data-aos-anchor=".skills"
+                data-aos-anchor-placement="center-bottom">
                 <canvas id="myChart"></canvas>
             </div>
         </article>
@@ -121,13 +130,96 @@
         </aside>
     </section>
 
-    <section>
+    <section id="PROJECT" data-aos="fade-up" data-aos-easing="ease-out-quart">
         <h2 class="title project">PROJECT</h2>
+        <div class="gallery flex">
+            <figure class="snip1425">
+                <img src="images/1.png" alt="project1" />
+                <figcaption><i class="ion-podium"></i>
+                    <h4>기록 및 랭킹을 통한 학습 동기부여</h4>
+                    <h2>SPARTA STUDY</h2>
+                    <button type="button" onclick="window.open(`http://mini-talk.shop.s3-website.ap-northeast-2.amazonaws.com/group
+              `)">Demo</button>
+                    <button type="button"
+                        onclick="window.open(`https://github.com/miniPinetree/Sparta-Study-Club#readme`)">Github</button>
+                    <button type="button"
+                        onclick="window.open(`https://www.youtube.com/watch?v=PO9PinZHFJs&t=9s`)">Youtube</button>
+
+
+                </figcaption>
+            </figure>
+            <figure class="snip1425"><img src="images/3.png" alt="project2" />
+                <figcaption><i class="ion-university"></i>
+                    <h4>여러 플랫폼의 취미 클래스를 한 눈에</h4>
+                    <h2>AFTER WORK</h2>
+                    <button type="button" onclick="window.open(`https://afterwork.co.kr/
+              `)">Demo</button>
+                    <button type="button"
+                        onclick="window.open(`https://github.com/miniPinetree/_AfterWork#readme`)">Github</button>
+                    <button type="button"
+                        onclick="window.open(`https://www.youtube.com/watch?v=sQEvqB1_vuM`)">Youtube</button>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+            <figure class="snip1425"><img src="images/2.png" alt="project3" />
+                <figcaption><i class="ion-university"></i>
+                    <h4>건강식단전문 쇼핑몰 클론</h4>
+                    <h2>DANOSHOP</h2>
+                    <button type="button"
+                        onclick="window.open(`https://github.com/miniPinetree/CloneCoding---DANOSHOP#readme`)">Github</button>
+                    <button type="button"
+                        onclick="window.open(`https://www.youtube.com/watch?v=8M8cc51CJL8&t=13s`)">Youtube</button>
+                </figcaption>
+            </figure>
+        </div>
 
     </section>
-    <section>
+    <!-- <section >
+        <h2 class="title journey">JOURNEY</h2>
+        <div class="journey"></div>
+    </section> -->
+    <section id="CONTACT" data-aos="fade-up" data-aos-easing="ease-out-quart">
         <h2 class="title contact">CONTACT</h2>
-        <div class="profile"></div>
+        <div class="flex">
+
+            <div class="form">
+
+                <div class="info flex">
+                    <h4>Contact Info</h4>
+                    <div class="profile"></div>
+                    <div class="icons">
+                        <div class="flex">
+                            <div class="icon" id="location"></div>
+                            <p>Seoul, Korea</p>
+                        </div>
+                        <div class="flex link" onclick="window.open(`https://github.com/miniPinetree`)">
+                            <div class="icon" id="github"></div>
+                            <p>miniPinetree</p>
+                        </div>
+                        <div class="flex link" onclick="window.open(`https://velog.io/@mygomi`)">
+                            <div class="icon" id="blog"></div>
+                            <p>@mygomi</p>
+                        </div>
+                        <div class="flex link" onclick="window.open(`https://www.youtube.com/channel/UCUYzRJIrml_X_7S-M7KMFWw`)">
+                            <div class="icon" id="youtube"></div>
+                            <p>코딩하는푸들</p>
+                        </div>
+                       
+                       
+                        
+                    </div>
+
+
+                </div>
+                <div class="email flex">
+                    <h4>Send a message</h4>
+                    <input id="inputName" type="text" placeholder="Name">
+                    <input id="inputEmail" type="text" placeholder="Email">
+                    <textarea placeholder="message" name="message" id="inputMessage" cols="30" rows="10"></textarea>
+                    <button type="submit">Send</button>
+                </div>
+            </div>
+
     </section>
     <footer class="footer">
         <img id="upArrow" src="images/up-arrow.png" alt="위로 올라가기 버튼">
@@ -157,6 +249,9 @@
 
     <script type="text/javascript" src="index.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="sweetalert2.min.js"></script>
+<link rel="stylesheet" href="sweetalert2.min.css">
     <script>
         AOS.init();
     </script>
