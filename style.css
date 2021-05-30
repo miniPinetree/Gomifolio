@@ -421,10 +421,14 @@ button {
   border: none;
   width: 60px;
   padding: 2px 0;
-  margin-top: 5px;
+  margin: 5px auto;
   background-color: #04040486;
   border-radius: 10px;
   color: white;
+}
+figcaption p {
+  font-size: 0.8em;
+  background-color: whitesmoke;
 }
 
 /* contact */
