@@ -9,13 +9,17 @@
     <title>Misong's Portfolio</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- <link rel="stylesheet" href="sweetalert2.min.css"> -->
     <script defer src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script defer type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script defer type="text/javascript">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
         (function () {
             emailjs.init("user_nSqFMYOAS0yt29P8844Pb");
         })();
     </script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- <script src="sweetalert2.min.js"></script> -->
 </head>
 
 <body>
@@ -54,7 +58,7 @@
             <h2>ABOUT</h2>
             <h3># 배움과 도전을 즐기는 프론트엔드 개발자</h3>
             <p>새로운 도전에 대한 설렘은 4,600미터에서의 다이빙도 가능케 합니다.</p>
-            <p> 
+            <p>
                 프로그래밍의 파장력과 성장에 대한 갈망으로 개발자의 길을 걷게 되었습니다.
                 <br />책임감있게 일 하고 끊임없이 스스로를 개선하여
                 팀과 회사의 성장, 사용자 편의에 기여할 수 있는 개발자가 되고 싶습니다.
@@ -144,10 +148,10 @@
                         onclick="window.open(`https://github.com/miniPinetree/Sparta-Study-Club#readme`)">Github</button>
                     <button type="button"
                         onclick="window.open(`https://www.youtube.com/watch?v=PO9PinZHFJs&t=9s`)">Youtube</button>
-                        <p><b>React</b></p>
-                        <p>chart.js와 websocket</p>
-                        <p>RESTful API</p>
-                        <p>JWT 로그인</p>
+                    <p><b>React</b></p>
+                    <p>chart.js와 websocket</p>
+                    <p>RESTful API</p>
+                    <p>JWT 로그인</p>
 
                 </figcaption>
             </figure>
@@ -161,13 +165,11 @@
                         onclick="window.open(`https://github.com/miniPinetree/_AfterWork#readme`)">Github</button>
                     <button type="button"
                         onclick="window.open(`https://www.youtube.com/watch?v=sQEvqB1_vuM`)">Youtube</button>
-                
-                        <p><b>React</b></p>
-                        <p>1천명의 사용자 130건의 피드백 반영</p>
-                        <p>React memo이용 렌더링 최적화</p>
-                        <p>회원정보 수정 시 API호출 최소화</p>
-                        
-                        </figcaption>
+                    <p><b>React</b></p>
+                    <p>1천명의 사용자 130건의 피드백 반영</p>
+                    <p>React memo이용 렌더링 최적화</p>
+                    <p>회원정보 수정 시 API호출 최소화</p>
+                </figcaption>
                 <a href="#"></a>
             </figure>
             <figure class="snip1425"><img src="images/2.png" alt="project3" />
@@ -178,15 +180,13 @@
                         onclick="window.open(`https://github.com/miniPinetree/CloneCoding---DANOSHOP#readme`)">Github</button>
                     <button type="button"
                         onclick="window.open(`https://www.youtube.com/watch?v=8M8cc51CJL8&t=13s`)">Youtube</button>
-                        <p><b>React</b></p>
-                        <p>Carousel</p>
-                        <p>로컬스토리지 장바구니 저장</p>
-                        <p>상품 옵션 선택 시 상태관리</p>
-
-                    </figcaption>
+                    <p><b>React</b></p>
+                    <p>Carousel</p>
+                    <p>로컬스토리지 장바구니 저장</p>
+                    <p>상품 옵션 선택 시 상태관리</p>
+                </figcaption>
             </figure>
         </div>
-
     </section>
     <!-- <section >
         <h2 class="title journey">JOURNEY</h2>
@@ -195,9 +195,7 @@
     <section id="CONTACT" data-aos="fade-up" data-aos-easing="ease-out-quart">
         <h2 class="title contact">CONTACT</h2>
         <div class="flex">
-
             <div class="form">
-
                 <div class="info flex">
                     <h4>Contact Info</h4>
                     <div class="profile"></div>
@@ -214,16 +212,12 @@
                             <div class="icon" id="blog"></div>
                             <p>@mygomi</p>
                         </div>
-                        <div class="flex link" onclick="window.open(`https://www.youtube.com/channel/UCUYzRJIrml_X_7S-M7KMFWw`)">
+                        <div class="flex link"
+                            onclick="window.open(`https://www.youtube.com/channel/UCUYzRJIrml_X_7S-M7KMFWw`)">
                             <div class="icon" id="youtube"></div>
                             <p>코딩하는푸들</p>
                         </div>
-                       
-                       
-                        
                     </div>
-
-
                 </div>
                 <div class="email flex">
                     <h4>Send a message</h4>
@@ -233,7 +227,6 @@
                     <button type="submit">Send</button>
                 </div>
             </div>
-
     </section>
     <footer class="footer">
         <img id="upArrow" src="images/up-arrow.png" alt="위로 올라가기 버튼">
@@ -261,11 +254,8 @@
     </footer>
 
     <script defer type="text/javascript" src="index.js"></script>
-    <script defer src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script defer src="sweetalert2.min.js"></script>
-<link rel="stylesheet" href="sweetalert2.min.css">
-    <script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
         AOS.init();
     </script>
 </body>
