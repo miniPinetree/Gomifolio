@@ -14,6 +14,17 @@ window.addEventListener("scroll", function () {
     banner.style.marginBottom = value * -0.5 + "px";
   }
 });
+
+window.addEventListener("resize", () => {
+  if (window.innerWidth < 700) {
+    Swal.fire({
+      text: '이 사이트는 PC 접속에 최적화되어 있습니다. 😀',
+      confirmButtonText: 'OK',
+      icon: 'warning'
+    })
+  }
+});
+// if (window.innerWidth < 700)
 // nav bar click event
 // const ul = document.querySelector("body > nav > ul");
 // const sections = document.querySelectorAll("body > section");
